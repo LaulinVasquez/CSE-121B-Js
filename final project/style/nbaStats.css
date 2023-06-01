@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Gemunu+Libre:wght@800&display=swap');
+
+
+:root{
+    --primary-color: #050505;
+    --secondary-color: #1B9AAA;
+    --accent1-color: #dddbcb;
+    --accent2-color: #FFFFFF;
+    --background-color: #F5F1E3;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Gemunu Libre";
+    --paragraph-font: sans-serif, "Dosis", "Gemunu Libre";
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+nav{
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+#date{
+    text-align: right;
+    padding-right: 25px;
+}
+h1{
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+p{
+    font-family: var(--paragraph-font);
+}
+
+#teams{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    margin: 15px;
+    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+article:hover{
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+div {
+    margin:auto;
+    text-align: center;
+}
+#sort{
+    text-align: center;
+    background-color: var(--accent1-color);
+    border-spacing: 20cm;
+    color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 32.5em) {
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #teams {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #teams {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
