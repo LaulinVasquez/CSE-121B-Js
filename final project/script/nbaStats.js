@@ -55,6 +55,7 @@ async function getTeams(url){
             }
         });
     }
+
 }
 
 getTeams(url);

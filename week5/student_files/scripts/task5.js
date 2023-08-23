@@ -24,7 +24,8 @@ else if (day == 6 || day == 0 ){
 // Step 1: Declare a new variable to hold another message
 let message2 = " ";
 // Step 2: Use switch, case and break to set the message variable to the day of the week as a string (e.g. Sunday, Monday, etc.) using the day of week variable declared in Step 2 above
-switch(day){
+switch(day)
+{
     case 0:
         message2 = "Sunday";
         break
@@ -45,7 +46,7 @@ switch(day){
         break;
     case 6:
         message2 = "Saturday";
-    }
+}
 /* OUTPUT */
 
 // Step 1: Assign the value of the first message variable to the HTML element with an ID of message1
@@ -69,7 +70,7 @@ function output(templeList){
     const html = templeList.map((temple)=> 
     `<article>
         <h3>${temple.templeName}</h3>
-        <h4>${temple.location}</h4>Z
+        <h4>${temple.location}</h4>
         <h4>${temple.dedicated}</h4>
         <img src = "${temple.imageUrl}" alt = "${temple.templeName} ">
     </article>`
@@ -137,7 +138,7 @@ let sortSelection = document.getElementById("sortBy");
                     return 0;
                 }
         })
-        }
+    }
     output(sortList);    
 }
 // Step 9: Add a change event listener to the HTML element with an ID of sortBy that calls the sortBy function
