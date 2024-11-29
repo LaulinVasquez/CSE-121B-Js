@@ -8,7 +8,7 @@ let year = date.getFullYear()
 if(month < 10){
     document.getElementById("date").innerHTML = `${day}-0${month}-${year}`;
 }else{
-  document.getElementById("date").innerHTML = 2`${day}-${month}-${year}`;
+  document.getElementById("date").innerHTML = `${day}-${month}-${year}`;
 }
 
 let teamList = [];
